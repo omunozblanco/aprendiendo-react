@@ -7,7 +7,11 @@ import debounce from 'just-debounce-it'
 function useSearch () {
   const [search, updateSearch] = useState('')
   const [error, setError] = useState(null)
-  const isFirstInput = useRef(true)
+  const isFirstInput = useRef(true)    
+
+
+
+  
 
   useEffect(() => {
     if (isFirstInput.current) {
